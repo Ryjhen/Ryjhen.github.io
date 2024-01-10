@@ -1,149 +1,170 @@
 body {
-    background-color: rgb(20, 20, 20);
-    margin: 0px;
-  }
-  
-  #menu {  
-    align-items: Center;
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-  }
-  
-  #menu-items {
-    margin-left: clamp(1rem, 5vw, 60rem);
-    position: relative;
-    margin-bottom: clamp(1rem, 20vw, 10rem);
-    z-index: 2;
-    font-size: 10px;
-  }
-  
-  #menu[data-active-index="0"] > #menu-background-pattern {
-    background-position: 0% -25%;
-  }
-  
-  #menu[data-active-index="1"] > #menu-background-pattern {
-    background-position: 0% -50%;
-  }
-  
-  #menu[data-active-index="2"] > #menu-background-pattern {
-    background-position: 0% -75%;
-  }
-  
-  #menu[data-active-index="3"] > #menu-background-pattern {
-    background-position: 0% -100%;
-  }
-  
-  #menu[data-active-index="0"] > #menu-background-image {
-    background-position: center 45%;
-  }
-  
-  #menu[data-active-index="1"] > #menu-background-image {
-    background-position: center 50%;
-  }
-  
-  #menu[data-active-index="2"] > #menu-background-image {
-    background-position: center 55%;
-  }
-  
-  #menu[data-active-index="3"] > #menu-background-image {
-    background-position: center 60%;
-  }
-  
-  /*Menu background dot thing*/
-  #menu-background-pattern {
-    background-image: radial-gradient(
-      rgba(255, 255, 255, 0.1) 9%, 
-      transparent 9%
-    );
-    background-position: 0% 0%;
-    background-size: 12vmin 12vmin;
-    height: 100vh;
-    left: 0px;
-    position: absolute;
-    top: 0px;
-    transition: opacity 800ms ease, 
-      background-size 800ms ease,
-      background-position 800ms ease;
-    width: 100vw;
-    z-index: 1;
+  background-color: rgb(20, 20, 20);
+  margin: 0px;
+}
 
-  }
-  
+#menu {  
+  align-items: Center;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+#menu-items {
+  margin-left: clamp(1rem, 5vw, 60rem);
+  position: relative;
+  margin-bottom: clamp(1rem, 20vw, 10rem);
+  z-index: 2;
+  font-size: 10px;
+}
+
+#menu[data-active-index="0"] > #menu-background-pattern {
+  background-position: 0% -25%;
+}
+
+#menu[data-active-index="1"] > #menu-background-pattern {
+  background-position: 0% -50%;
+}
+
+#menu[data-active-index="2"] > #menu-background-pattern {
+  background-position: 0% -75%;
+}
+
+#menu[data-active-index="3"] > #menu-background-pattern {
+  background-position: 0% -100%;
+}
+
+#menu[data-active-index="0"] > #menu-background-image {
+  background-position: center 45%;
+}
+
+#menu[data-active-index="1"] > #menu-background-image {
+  background-position: center 50%;
+}
+
+#menu[data-active-index="2"] > #menu-background-image {
+  background-position: center 55%;
+}
+
+#menu[data-active-index="3"] > #menu-background-image {
+  background-position: center 60%;
+}
+
+/*Menu background dot thing*/
+#menu-background-pattern {
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.1) 9%, 
+    transparent 9%
+  );
+  background-position: 0% 0%;
+  background-size: 12vmin 12vmin;
+  height: 100vh;
+  left: 0px;
+  position: absolute;
+  top: 0px;
+  transition: opacity 800ms ease, 
+    background-size 800ms ease,
+    background-position 800ms ease;
+  width: 100vw;
+  z-index: 1;
+
+}
+
 /*background image thingy*/
-  #menu-background-image {
-    background-image: url("https://i.pinimg.com/originals/50/0d/05/500d05bcbc3c80383458ee245122acb8.gif");
-    background-position: center 40%;
-    background-size: 140vmax;
-    height: 100%;
-    left: 0px;  
-    opacity: 0.15;
-    position: absolute;
-    top: 0px;
-    transition: opacity 800ms ease,
-      background-size 800ms ease,
-      background-position 800ms ease;
-    width: 100%;
-    z-index: 0;
-    
-  }
+#menu-background-image {
+  background-image: url("https://i.pinimg.com/originals/50/0d/05/500d05bcbc3c80383458ee245122acb8.gif");
+  background-position: center 40%;
+  background-size: 140vmax;
+  height: 100%;
+  left: 0px;  
+  opacity: 0.15;
+  position: absolute;
+  top: 0px;
+  transition: opacity 800ms ease,
+    background-size 800ms ease,
+    background-position 800ms ease;
+  width: 100%;
+  z-index: 0;
   
-
-  #menu-items:hover ~ #menu-background-pattern {
-    background-size: 10vmin 10vmin;
-    opacity: 0.5;
-  }
-  
-  #menu-items:hover ~ #menu-background-image {
-    background-size: 230vmax;
-    opacity: 0.1;
-  }
-  
-  #menu-items:hover > .menu-item {
-    opacity: 0.3;
-  }
-  
-  #menu-items:hover > .menu-item:hover {
-    opacity: 1; 
-  
-  }
-  
-  .menu-item {
-    color: white;
-    cursor: pointer;
-    display: block;
-    font-family: 'Ibarra Real Nova', serif;
-    font-size: clamp(3rem, 7vw, 7rem);
-    padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
-    text-decoration: none;
-    transition: opacity 400ms ease;
-  }
+}
 
 
+#menu-items:hover ~ #menu-background-pattern {
+  background-size: 10vmin 10vmin;
+  opacity: 0.5;
+}
 
-/*Everything below is for design for about me page*/
-  /*-- Font Style --*/
-  .aboutMeFront{
-    
+#menu-items:hover ~ #menu-background-image {
+  background-size: 230vmax;
+  opacity: 0.1;
+}
+
+#menu-items:hover > .menu-item {
+  opacity: 0.3;
+}
+
+#menu-items:hover > .menu-item:hover {
+  opacity: 1; 
+
+}
+
+.menu-item {
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: clamp(3rem, 1vw, 7rem);
+  padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
+  text-decoration: none;
+  transition: opacity 400ms ease;
+}
+
+/*All items below are for cssInterest elements only*/
+
+#verticle-line {
+  width: 1px;
+  min-height: 700px;
+  background: red;
+  z-index: 2;
+  float:left;
+  margin: 10px;
+  align-items: left;
+  border-radius: 25px;
+}
+
+#box1 {
+  background-color: rgb(20, 19, 19);
+  opacity: 0.9;
+  z-index: 2;
+  width: 1050px;
+  height: 700px;
+  margin-left: 60px;
+  border-radius: 20px;
+}
+
+
+/*for box1*/
+#box1Text {
     color: white;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.5;
     justify-content:start;
     text-align: center;
-    
+    font-size: 30px;
+    margin: 10px;
+    background-color: rgb(103, 102, 102);
+    border-radius: 10px;
 }
 
-p{
-    color: white;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    line-height: 1.5;
-    margin-left: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 50%;
-    align-self: center;
-    margin-left: 30%;
-    
+#box1Video {
+  justify-content: center;
+  display: flex;
+  margin-top: 20px;
+  -ms-flex-align: center;
+}
+
   
-    
+iframe{
+  width:800px;
+  height: 450px;
 }
