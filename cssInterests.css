@@ -1,3 +1,4 @@
+
 body {
   background-color: rgb(20, 20, 20);
   margin: 0px;
@@ -72,7 +73,7 @@ body {
 
 /*background image thingy*/
 #menu-background-image {
-  background-image: url("https://i.pinimg.com/originals/50/0d/05/500d05bcbc3c80383458ee245122acb8.gif");
+  background-image: url("backgroundFlower.jpg");
   background-position: center 40%;
   background-size: 140vmax;
   height: 100%;
@@ -112,7 +113,7 @@ body {
   color: white;
   cursor: pointer;
   display: block;
-  font-family: 'Ibarra Real Nova', serif;
+  font-family: 'Roboto', sans-serif;
   font-size: clamp(3rem, 1vw, 7rem);
   padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
   text-decoration: none;
@@ -154,6 +155,9 @@ body {
     margin: 10px;
     background-color: rgb(103, 102, 102);
     border-radius: 10px;
+    width: 30%;
+    position: relative;
+    left: 33%;
 }
 
 #box1Video {
@@ -161,10 +165,67 @@ body {
   display: flex;
   margin-top: 20px;
   -ms-flex-align: center;
+  border: none;
+  overflow:hidden;
+  
 }
 
-  
-iframe{
-  width:800px;
-  height: 450px;
+.img.animated-gif{
+  width:200px;
+  height:auto;
+}
+
+
+.container{
+  width: 60vmin;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  border: 20px solid #ffffff;
+  border-radius: 8px;
+  box-shadow: 10px 25px 30px rgba(30,30,200,0.3);
+  z-index: 2;
+}
+.wrapper{
+  width: 100%;
+  display: flex;
+  animation: slide 16s infinite;
+}
+@keyframes slide{
+  0%{
+      transform: translateX(0);
+  }
+  25%{
+      transform: translateX(0);
+  }
+  30%{
+      transform: translateX(-118%);
+  }
+  50%{
+      transform: translateX(-118%);
+  }
+  55%{
+      transform: translateX(-225%);
+  }
+  75%{
+      transform: translateX(-225%);
+  }
+  80%{
+      transform: translateX(-330%);
+  }
+  100%{
+      transform: translateX(-330%);
+  }
+}
+
+.text1{
+  position: relative;
+  margin-left: 40%;
+  z-index:3;
+  top: 20px;
+  left: 70px;
+  display:flex;
+  flex-wrap: wrap;
 }

@@ -1,3 +1,9 @@
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
 body {
     background-color: rgb(20, 20, 20);
     margin: 0px;
@@ -72,9 +78,9 @@ body {
   
 /*background image thingy*/
   #menu-background-image {
-    background-image: url("https://i.pinimg.com/originals/50/0d/05/500d05bcbc3c80383458ee245122acb8.gif");
+    background-image: url("backgroundsign.jpg");
     background-position: center 40%;
-    background-size: 140vmax;
+    background-size: 110vmax;
     height: 100%;
     left: 0px;  
     opacity: 0.15;
@@ -112,7 +118,7 @@ body {
     color: white;
     cursor: pointer;
     display: block;
-    font-family: 'Ibarra Real Nova', serif;
+    font-family: 'Roboto', sans-serif;
     font-size: clamp(3rem, 1vw, 7rem);
     padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
     text-decoration: none;
@@ -143,6 +149,8 @@ p{
     width: 50%;
     align-self: center;
     margin-left: 30%;
+    font-size: 20px;
+    z-index:0;
     
   
     
@@ -190,6 +198,7 @@ p{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
+    z-index:2;
   }
   
  .paraBox{
@@ -205,7 +214,7 @@ p{
   position: absolute;
   top:0%;
   left: 45%;
-  z-index:1;
+  z-index:0;
   opacity: 0.3;
 }
 
@@ -217,7 +226,7 @@ p{
   position: absolute;
   top:0%;
   left: 70%;
-  z-index: 1;
+  z-index: 0;
   opacity: 0.3;
 }
 
@@ -229,7 +238,7 @@ p{
   position: absolute;
   top:0%;
   left: 20%;
-  z-index:1;
+  z-index:0;
   opacity: 0.3;
 }
 
@@ -242,7 +251,7 @@ p{
   position: absolute;
   top:0%;
   left: -5%;
-  z-index:1;
+  z-index:0;
   opacity: 0.3;
 }
 
@@ -300,7 +309,7 @@ p{
   }
 
 
-  #verticle-line {
+  /* #verticle-line {
     width: 1px;
     min-height: 700px;
     background: red;
@@ -309,4 +318,44 @@ p{
     margin: 10px;
     align-items: left;
     border-radius: 25px;
+  } */
+
+  .icon {
+    width: 60px;
+    height: 60px;
+    background-image: url("Icon2"); /* Use 'url' to specify the image source */
+    margin-left: 10px;
+    z-index: 3;
+    left: -600px;
+    display: flex;
+    flex-direction: row; /* Change 'column' to 'row' for horizontal alignment */
+    position: relative;
+    justify-content: space-between;
+    top: 120px; /* Adjust the value to move the icons below the page */
+    margin:30px;
   }
+  
+  /* Additional styles to center the icons */
+  .icon img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .icon img:last-child {
+    margin-right: 0; /* Remove extra margin for the last icon */
+  }
+  
+/* .figContainer{
+  display:flex;
+  flex:content;
+  position:relative
+}
+
+  figcaption{
+    color:white;
+    z-index:3;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+  } */

@@ -1,5 +1,10 @@
 /*add loading screen window*/
 
+*{
+  font-family: 'Roboto', sans-serif;
+}
+
+
 body {
     background-color: rgb(20, 20, 20);
     margin: 0px;
@@ -35,19 +40,19 @@ body {
   }
   
   #menu[data-active-index="0"] > #menu-background-image {
-    background-position: center 45%;
+    background-position: center 40%;
   }
   
   #menu[data-active-index="1"] > #menu-background-image {
-    background-position: center 50%;
+    background-position: center 45%;
   }
   
   #menu[data-active-index="2"] > #menu-background-image {
-    background-position: center 55%;
+    background-position: center 50%;
   }
   
   #menu[data-active-index="3"] > #menu-background-image {
-    background-position: center 60%;
+    background-position: center 50%;
   }
   
   #menu-background-pattern {
@@ -56,7 +61,7 @@ body {
       transparent 9%
     );
     background-position: 0% 0%;
-    background-size: 12vmin 12vmin;
+    background-size: 10vmin 10vmin;
     height: 100vh;
     left: 0px;
     position: absolute;
@@ -69,9 +74,9 @@ body {
   }
   
   #menu-background-image {
-    background-image: url("https://i.pinimg.com/originals/b8/2f/28/b82f28a7e9c8fcb3868d3d94652c107c.gif");
-    background-position: center 40%;
-    background-size: 200vmax;
+    background-image: url("backgroundLake.jpg");
+    background-position: center 90%;
+    background-size: 100vmax;
     height: 100%;
     left: 0px;  
     opacity: 0.15;
@@ -108,7 +113,7 @@ body {
     cursor: pointer;
     display: block;
     font-family: 'Ibarra Real Nova', serif;
-    font-size: clamp(3rem, 8vw, 8rem);
+    font-size: clamp(1rem, 5vw, 5rem);
     padding: clamp(0.25rem, 0.5vw, 1rem) 0rem;
     text-decoration: none;
     transition: opacity 400ms ease;
