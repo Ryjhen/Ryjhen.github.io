@@ -74,7 +74,13 @@ body {
     width: 100vw;
     z-index: 1;
 
+    @media only screen and (max-width: 768px) {
+      background-size: 8vmin 8vmin; /* scren size */
+    }
   }
+  
+
+  
   
 /*background image thingy*/
   #menu-background-image {
@@ -91,6 +97,11 @@ body {
       background-position 800ms ease;
     width: 100%;
     z-index: 0;
+
+    @media only screen and (max-width: 768px) {
+      background-size: 100vmax; /* Adjust as needed for smaller screens */
+    }
+  }
     
   }
   
@@ -323,7 +334,7 @@ p{
   .icon {
     width: 60px;
     height: 60px;
-    background-image: url("Icon2"); /* Use 'url' to specify the image source */
+    background-image: url("Icon2");
     margin-left: 10px;
     z-index: 3;
     left: -600px;
@@ -333,6 +344,13 @@ p{
     justify-content: space-between;
     top: 120px; /* Adjust the value to move the icons below the page */
     margin:30px;
+
+    @media only screen and (max-width: 768px) {
+      flex-direction: column; /* Change layout to vertical for smaller screens */
+      align-items: center;
+      margin-left: 0;
+      top: 0; /* Adjust the values for icons */
+    }
   }
   
   /* Additional styles to center the icons */
@@ -347,6 +365,12 @@ p{
     margin-right: 0; /* Remove extra margin for the last icon */
   }
   
+
+  @media only screen and (max-width: 768px) {
+    #menu-items {
+      margin-left: 2rem;
+    }
+  }
 /* .figContainer{
   display:flex;
   flex:content;
